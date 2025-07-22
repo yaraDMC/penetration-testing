@@ -43,3 +43,17 @@ Comando	Uso
 nmap -O	Detección de sistema operativo
 nmap --script vuln	Escaneo con scripts de vulnerabilidad
 nmap -T4 -F	Escaneo rápido (100 puertos comunes)
+
+
+
+🤖 Scripts de Automatización 
+1. Automatización de Escaneos (Bash)
+
+
+## 🛠️ Uso  
+1. Clona el repo:  
+   bash  
+   git clone https://github.com/yaraDMC/Nmap-Metasploitable2-Analysis
+   
+ chmod +x scripts/auto_nmap.sh  
+./scripts/auto_nmap.sh <IP>  
