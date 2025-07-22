@@ -9,4 +9,37 @@
 
 primero prenderemos las maquina tanto en este caso ell metasploit2 y Kali Linux
 
-![](https://github.com/yaraDMC/penetration-testing/blob/main/nmap/images/Metasploitable2imagen.png)
+![](https://github.com/yaraDMC/penetration-testing/blob/main/nmap/images/meta.png)
+
+1. Escaneo Inicial Sigiloso
+sudo nmap -sS -A 192.168.0.18
+
+¿Por qué este comando?
+
+-sS: SYN Scan (sigiloso, no completa conexiones TCP) → Ideal para no ser detectado.
+-A: Detección de SO y versiones → Primer panorama de vulnerabilidades.
+
+![](https://github.com/yaraDMC/penetration-testing/blob/main/nmap/images/escaneo.png)
+
+2. Escaneo Profundo a Puertos Críticos
+
+y despues utilizamos este script para cuando sabemos que puertos estan abiertos
+
+sudo nmap -sCV -p21,22,23,25,53,80 192.168.0.18
+
+![](https://github.com/yaraDMC/penetration-testing/blob/main/nmap/images/escaneo2.png)
+
+¿Qué logramos?
+
+-sCV: Detecta versiones exactas (+ scripts básicos de Nmap).
+
+Ejemplo de hallazgo para FTP:
+| ftp-anon: Anonymous FTP login allowed (¡Riesgo alto!)  
+|_vsftpd 2.3.4: Vulnerable a CVE-2011-2523  
+
+
+3. Otros Comandos Clave 
+Comando	Uso
+nmap -O	Detección de sistema operativo
+nmap --script vuln	Escaneo con scripts de vulnerabilidad
+nmap -T4 -F	Escaneo rápido (100 puertos comunes)
