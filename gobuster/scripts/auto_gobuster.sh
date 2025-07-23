@@ -5,6 +5,6 @@
 echo "🔍 Iniciando escaneo contra $1"
 gobuster dir -u http://$1 \
 -w $2 \
--o results/scan_$(date +%Y%m%d_%H%M%S).txt
+-o scan_$(date +%Y%m%d_%H%M%S).txt
 
 echo "✅ Resultados guardados en /results"
