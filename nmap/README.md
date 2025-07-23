@@ -53,7 +53,14 @@ nmap -T4 -F	Escaneo rápido (100 puertos comunes)
 ## 🛠️ Uso  
 1. Clona el repo:  
    bash  
-   git clone https://github.com/yaraDMC/Nmap-Metasploitable2-Analysis
-   
- chmod +x scripts/auto_nmap.sh  
-./scripts/auto_nmap.sh <IP>  
+git clone https://github.com/yaraDMC/penetration-testing.git
+
+![](https://github.com/yaraDMC/penetration-testing/blob/main/nmap/images/escaneo3.png)
+
+
+ chmod +x auto_nmap.sh  
+./penetration-testing/auto_nmap.sh <IP>  
+
+![](https://github.com/yaraDMC/penetration-testing/blob/main/nmap/images/escaneo4.png)
+
+Este es un ejemplo de automatizar el escaneo.
