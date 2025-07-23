@@ -2,10 +2,11 @@
 
 🔍 Proyecto: Análisis de Vulnerabilidades con Nmap + Metasploitable2
 "Identificar servicios vulnerables en un entorno controlado (Metasploitable2) mediante:  
-1. 🔎 Escaneo sigiloso inicial (-sS)  
-2. 🎯 Análisis profundo de puertos críticos (-sCV)  
-3. 📊 Documentación profesional de hallazgos  
-4. 🤖 Automatización de procesos con scripts (Python/Bash)"
+
+## 📌 Objetivos  
+✔️ Identificar servicios vulnerables en redes locales usando **Nmap**  
+✔️ Demostrar metodología de escaneo **sigiloso (-sS) y detallado (-sCV)**  
+✔️ Automatizar procesos con scripts (Bash/Python)  
 
 primero prenderemos las maquina tanto en este caso ell metasploit2 y Kali Linux
 
