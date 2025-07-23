@@ -7,4 +7,4 @@ gobuster dir -u http://$1 \
 -w $2 \
 -o scan_$(date +%Y%m%d_%H%M%S).txt
 
-echo "✅ Resultados guardados en /results"
+echo "✅ Resultados guardados"
